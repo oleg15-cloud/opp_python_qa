@@ -3,15 +3,13 @@ from math import sqrt
 
 
 class Triangle(Figure):
-    name = "Triangle"
-    area = None
-    perimeter = None
 
     def __init__(self, a, b, c):
         super().__init__(self.name, self.area, self.perimeter)
         self.a = a
         self.b = b
         self.c = c
+        self.name = "Triangle"
         self.area = self.get_area_of_triangle()
         self.perimeter = self.get_perimeter_of_triangle()
 
