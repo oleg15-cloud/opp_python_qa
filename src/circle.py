@@ -5,14 +5,13 @@ from math import pi
 class Circle(Figure):
 
     def __init__(self, radius):
-        super().__init__(self.name, self.area, self.perimeter)
         self.radius = radius
         self.name = "Circle"
-        self.area = self.get_area_of_circle()
-        self.perimeter = self.get_perimeter_of_circle()
 
-    def get_perimeter_of_circle(self):
+    @property
+    def perimeter(self):
         return round(2 * pi * self.radius, 2)
 
-    def get_area_of_circle(self):
+    @property
+    def area(self):
         return round(pi * self.radius ** 2, 2)
