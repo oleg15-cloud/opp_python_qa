@@ -12,4 +12,4 @@ class Figure:
         if isinstance(obj, Figure):
             return round(self.area + obj.area, 2)
         else:
-            raise ValueError(f"Incorrect class of object. This object is not a geometric figure")
+            raise ValueError("Incorrect class of object. This object is not a geometric figure")
