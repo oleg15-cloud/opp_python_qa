@@ -17,7 +17,6 @@ class Triangle(Figure):
     def perimeter(self):
         return round(self.a + self.b + self.c, 2)
 
-
     @property
     def area(self):
         part_of_perimeter = (self.a + self.b + self.c) / 2
